@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/jade-rougerie/static/css/main.cd35e21b.css",
-    "main.js": "/jade-rougerie/static/js/main.9ff8e9d3.js",
+    "main.js": "/jade-rougerie/static/js/main.07e13fb3.js",
     "static/js/787.6ddc82e5.chunk.js": "/jade-rougerie/static/js/787.6ddc82e5.chunk.js",
     "static/media/WC_Rhesus_B_Bta-webfont.svg": "/jade-rougerie/static/media/WC_Rhesus_B_Bta-webfont.041948f863e03fcd55ac.svg",
     "static/media/WC_Rhesus_B_Bta-webfont.eot": "/jade-rougerie/static/media/WC_Rhesus_B_Bta-webfont.e6be0b7f8a946dd8ceb2.eot",
@@ -53,11 +53,11 @@
     "static/media/kosovo.jpg": "/jade-rougerie/static/media/kosovo.10f04f59e220f35f15e2.jpg",
     "index.html": "/jade-rougerie/index.html",
     "main.cd35e21b.css.map": "/jade-rougerie/static/css/main.cd35e21b.css.map",
-    "main.9ff8e9d3.js.map": "/jade-rougerie/static/js/main.9ff8e9d3.js.map",
+    "main.07e13fb3.js.map": "/jade-rougerie/static/js/main.07e13fb3.js.map",
     "787.6ddc82e5.chunk.js.map": "/jade-rougerie/static/js/787.6ddc82e5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cd35e21b.css",
-    "static/js/main.9ff8e9d3.js"
+    "static/js/main.07e13fb3.js"
   ]
 }
