@@ -1,0 +1,220 @@
+.logo {
+  height: 100%;
+  padding-top: 0.5rem;
+}
+.logo > svg {
+  display: block;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  /* box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); */
+  background: #fefbf8;
+  max-width: 1500px;
+  border-bottom: 0.5px solid black;
+}
+
+.img--splash-nav {
+  height: 3rem;
+  position: absolute;
+  top: 0.5rem;
+  right: 2rem;
+  display: none;
+}
+
+.navbar > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0.5rem 3rem;
+}
+
+.navbar--items {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 1.3rem;
+}
+.navbar--items a {
+  padding-left: 2rem;
+  font-family: 'Poiret One', cursive;
+  font-weight: 500;
+  /* display: inline-block; */
+  /* position: relative; */
+}
+
+/* a:after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: #fff;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+a:hover:after {
+  width: 80%;
+  left: 0;
+} */
+
+@media screen and (max-width: 620px) {
+  .navbar--items {
+    /* visibility: hidden; */
+    flex-direction: column;
+    font-size: 1.3rem;
+    position: fixed;
+    top: 6.5rem;
+    line-height: 4rem;
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    border-radius: 10px 0 0 10px;
+    padding: 1rem 0;
+    right: 0;
+
+    /* transform: translateX(-11rem);
+    transition: all 330ms ease-in-out; */
+  }
+
+  .show--nav {
+    transform: translateX(11rem);
+    transition: all 330ms ease-in-out;
+  }
+
+  .hide--nav {
+    transform: translateX(0rem);
+    transition: all 330ms ease-in-out;
+  }
+
+  .rotate--img {
+    transform: rotate(0.5turn);
+    transition: transform 330ms ease-in-out;
+  }
+  .rotate--img-2 {
+    transform: rotate(-0.5turn);
+    transition: transform 330ms ease-in-out;
+  }
+
+  .navbar--items li {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
+    /* background: rgba(255, 255, 255, 0.2); */
+    background: #9367c0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to right,
+      #f39a9d,
+      #9367c0
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to right,
+      #f39a9d,
+      #9367c0
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    margin: 0.5rem 0 0.5rem 1rem;
+    border-radius: 9px 0 0 9px;
+  }
+
+  .navbar--items a {
+    padding-right: 2rem;
+    color: white;
+
+    font-weight: 700;
+  }
+  .img--splash-nav {
+    display: block;
+    cursor: pointer;
+  }
+
+  .li--underline img {
+    display: none;
+  }
+
+  .li--underline {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 620.2px) {
+  .li--underline img {
+    height: 5.2px;
+    position: absolute;
+    bottom: 0.05rem;
+  }
+
+  .img--underline-1 {
+    width: 190px;
+  }
+
+  .img--underline-2 {
+    width: 83px;
+  }
+
+  .img--underline-3 {
+    width: 82px;
+  }
+
+  .img--underline-4 {
+    width: 74px;
+  }
+
+  .li--underline {
+    height: 50.4px;
+    position: absolute;
+    top: 0.5rem;
+  }
+
+  .li--underline span {
+    visibility: hidden;
+  }
+
+  .li--underline:hover span {
+    visibility: visible;
+  }
+
+  .li--underline-1 {
+    width: 190px;
+    left: 2.7rem;
+  }
+
+  .li--underline-2 {
+    width: 83px;
+    right: 15.75rem;
+  }
+
+  .li--underline-3 {
+    width: 82px;
+    right: 9rem;
+  }
+
+  .li--underline-4 {
+    width: 74px;
+    right: 2.7rem;
+  }
+  /* .li--underline-1:hover {
+    visibility: visible;
+    background-color: #9367c0;
+  
+  } */
+}
+
+@media screen and (max-width: 500px) {
+  .navbar > ul {
+    padding: 0.5rem 2rem;
+  }
+}
+
+@media screen and (min-width: 1281px) {
+  .navbar > ul {
+    padding: 0.5rem 5rem;
+  }
+}

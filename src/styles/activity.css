@@ -1,0 +1,300 @@
+.bg--image {
+  margin-top: -2rem;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+  max-width: 1500px;
+  background-color: #fefbf8;
+  padding-top: 3rem;
+  margin-bottom: -15rem;
+  z-index: -1;
+
+  /* background-color: #00171f; */
+}
+
+.paint--font {
+  top: -35rem;
+  right: 0;
+  position: absolute;
+  font-family: 'wc_rhesus_b_btaitalic';
+  color: black;
+  font-size: 40rem;
+
+  background: url('../assets/oil-paint.jpg') no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: 50%;
+}
+
+.quote {
+  margin: 0;
+  padding: 2rem 1.5rem 1rem 1.5rem;
+  width: 80%;
+
+  margin: 0 auto;
+  font-size: 1.2rem;
+  color: #00171f;
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  line-height: 1.5;
+}
+
+.quote > img {
+  position: absolute;
+}
+
+.quote p {
+  margin-bottom: 2rem;
+}
+
+.quote--signature {
+  text-align: right;
+  padding-top: 8%;
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+}
+
+.quote--ending {
+  padding-left: 5%;
+}
+
+.section--video {
+  text-align: center;
+  padding: 8rem 3rem;
+}
+
+video {
+  width: 100%;
+  max-width: 700px;
+}
+
+/* -------------- TITLE -------------- */
+
+.header--container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.title--container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  padding: 5rem 0 4rem 0;
+  margin: 0 auto;
+}
+
+.title-artist {
+  font-size: 20vw;
+  text-align: start;
+}
+
+.title-painter {
+  font-size: 17vw;
+  text-align: right;
+}
+
+.line-through {
+  text-decoration: line-through;
+  font-size: 10vw;
+}
+
+.line-through:before {
+  content: '\00a0';
+}
+
+.line-through:after {
+  content: '\00a0\00a0\00a0\00a0\00a0';
+}
+
+.title-impressionist {
+  font-size: 11vw;
+  text-align: right;
+}
+
+/* -------------- BUTTON -------------- */
+
+.header--button {
+  width: 7.5rem;
+  height: 3rem;
+  color: black;
+  font-weight: bold;
+  border-radius: 5px;
+  font-family: 'Sen', sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  background: rgb(164, 212, 180);
+  background: linear-gradient(
+    0deg,
+    rgba(164, 212, 180, 1) 0%,
+    rgb(166, 215, 182) 100%
+  );
+}
+
+.btn-5:hover {
+  background: transparent;
+  box-shadow: none;
+}
+.btn-5:before,
+.btn-5:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2px;
+  width: 0;
+  background: black;
+  box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003,
+    4px 4px 5px 0px #0002;
+  transition: 400ms ease all;
+}
+.btn-5:after {
+  right: inherit;
+  top: inherit;
+  left: 0;
+  bottom: 0;
+}
+.btn-5:hover:before,
+.btn-5:hover:after {
+  width: 100%;
+  transition: 800ms ease all;
+}
+
+.btn--container {
+  display: flex;
+  justify-content: center;
+}
+
+/* -------------- SUPER TINY SCREEN -------------- */
+@media screen and (min-width: 249px) and (max-width: 411px) {
+  .quote {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .bg--image {
+    margin-bottom: -18rem;
+  }
+  .quote {
+    font-size: 1rem;
+  }
+
+  .section--video {
+    padding: 6rem 2rem;
+  }
+}
+
+@media screen and (min-width: 100px) and (max-width: 749.9px) {
+  .paint--font-bigscreen {
+    color: transparent;
+  }
+}
+
+@media screen and (min-width: 599px) {
+  .paint--font {
+    width: 100%;
+    top: -30rem;
+    font-size: 35rem;
+  }
+}
+
+@media screen and (min-width: 750px) and (max-width: 2000px) {
+  .header--container {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 12rem;
+  }
+
+  .section--video {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .title--container {
+    padding-top: 8rem;
+    padding-left: 3rem;
+    width: 40%;
+  }
+
+  .title-artist {
+    font-size: 11vw;
+  }
+
+  .title-painter {
+    font-size: 8vw;
+  }
+  .line-through {
+    font-size: 3.7vw;
+  }
+
+  .title-impressionist {
+    font-size: 5.5vw;
+  }
+
+  .bg--image {
+    width: 65%;
+    padding-top: 8rem;
+  }
+
+  .quote {
+    width: 70%;
+  }
+
+  .paint--font {
+    top: -27rem;
+  }
+
+  .paint--font-bigscreen {
+    font-size: 20rem;
+    font-family: 'wc_rhesus_b_btaitalic';
+    background: url('../assets/oil-paint.jpg') no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: 50%;
+    position: absolute;
+    top: 6rem;
+    right: 52%;
+    z-index: -1;
+  }
+}
+
+@media screen and (min-width: 1090px) and (max-width: 2000px) {
+  .quote {
+    font-size: 1.2rem;
+    width: 60%;
+  }
+
+  .title-artist {
+    font-size: 8rem;
+  }
+
+  .title-painter {
+    font-size: 6rem;
+  }
+  .line-through {
+    font-size: 2.3rem;
+  }
+
+  .title-impressionist {
+    font-size: 3.7rem;
+  }
+
+  .title--container {
+    padding-top: 10rem;
+  }
+
+  .bg--image {
+    width: 55%;
+    padding-top: 12rem;
+  }
+}

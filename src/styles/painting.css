@@ -1,0 +1,73 @@
+.carousel-wrapper {
+  width: 80vw;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.3);
+  margin: 2rem auto;
+  /* border: solid 1rem; */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  padding: 1rem 1rem 0 1rem;
+  border-radius: 8px;
+}
+
+.painting--one-img {
+  max-width: 500px;
+  border-radius: 6px;
+}
+
+.carousel-status {
+  color: black;
+}
+
+.carousel .thumb {
+  border-radius: 10px;
+  cursor: pointer;
+  padding: 0;
+  border: 2px solid #fefbf8;
+}
+
+.carousel .thumb:hover {
+  border: 2px solid #048ba8;
+}
+
+.carousel .thumb.selected {
+  padding: 0;
+  border: 2px solid #048ba8;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #048ba8;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #048ba8;
+}
+
+.carousel .thumbs-wrapper {
+  margin: 0;
+}
+
+.control-dots {
+}
+
+.slide-selected {
+  background-color: rgb(232, 226, 226);
+}
+
+button {
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+li .slide .selected {
+  display: flex !important;
+  align-items: center;
+  justify-content: center !important;
+}
+
+li .slide .previous {
+  display: flex !important;
+  align-items: center;
+  justify-content: center !important;
+}

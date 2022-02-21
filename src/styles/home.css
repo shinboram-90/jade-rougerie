@@ -1,0 +1,10 @@
+.painting--navbar {
+  padding-top: 2rem;
+
+  text-align: right;
+}
+
+.painting--navbar > a {
+  color: black;
+  padding-right: 2rem;
+}
