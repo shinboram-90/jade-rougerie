@@ -17,7 +17,7 @@ import PaintingDisplay from './PaintingDisplay';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="/jade-rougerie" element={<Layout />}>
         <Route index element={<Activity />} />
         <Route path="about" element={<About />} />
         <Route path="contact" element={<Contact />} />

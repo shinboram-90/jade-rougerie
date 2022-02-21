@@ -16,7 +16,7 @@ function Layout() {
         <ul>
           <div>
             <li>
-              <Link to="/" onClick={() => setActive(false)}>
+              <Link to="/jade-rougerie" onClick={() => setActive(false)}>
                 <div className="logo">
                   <svg
                     width="139"
