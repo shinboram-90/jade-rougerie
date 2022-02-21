@@ -38,7 +38,7 @@ function Activity() {
       <div className="btn--container">
         <button
           className="header--button btn-5"
-          onClick={() => navigate('/paintings')}
+          onClick={() => navigate('jade-rougerie/paintings')}
         >
           Gallerie
         </button>
